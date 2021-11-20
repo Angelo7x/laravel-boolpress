@@ -13,17 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //public
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@index');
 
 // auth
 Auth::routes();
 
 // rotte admin
 Route::middleware('auth')->namespace('Admin')->name('Admin.')->prefix('admin')->group(function() {
-    
+
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('posts', 'PostController');
     
 });
 
