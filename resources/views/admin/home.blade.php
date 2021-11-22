@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <button class="btn btn-warning"><a href="{{route("admin.posts.index")}}">Vai a tutti i posts</a></button>
                 </div>
             </div>
         </div>
