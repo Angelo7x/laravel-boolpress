@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 //public
 Route::get('/', 'PageController@index');
+Route::get('blog', 'PostController@index')->name('posts.index');
+Route::get('blog/{slug}', 'PostController@show')->name('posts.show');
+
 
 // auth
 Auth::routes();
