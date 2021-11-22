@@ -11,7 +11,7 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">ID post</th>
                             <th scope="col">Title</th>
                             <th scope="col">Slug</th>
                             <th scope="col">To do</th>
